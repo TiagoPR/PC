@@ -37,7 +37,7 @@ class Main {
         t2.start();
 
         System.out.println("Print no main");
-        t.join();
+        t.join(); // esperar que a thread termine
         t2.join();
         
 
