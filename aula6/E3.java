@@ -1,7 +1,7 @@
 class Barreira{
     private int contador = 0;
     private int limite;
-    private int sairam = 0;
+    private int sairam = 0; // b)
     private int e = 0; // alternativa b)
 
     Barreira (int N){
@@ -54,7 +54,7 @@ class Barreira{
         
         contador++;
         if (contador < limite) {
-            final int atual = e;
+            final int atual = e; // variável da thread
             while(e == atual)
                 wait();
         }
